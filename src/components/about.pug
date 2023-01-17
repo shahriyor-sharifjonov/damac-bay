@@ -1,0 +1,32 @@
+mixin about()
+    section.about#about
+        .about__bg 
+            img(src="@img/about-background.png", alt="" draggable="false")
+        .about__body.container 
+            .about__left 
+                h2.about__title 
+                    span SKY HIGH LUXURY
+                p.about__desc DAMAC Bay is a new residential development that combines exceptional craftsmanship with a waterfront lifestyle. The development is designed to provide residents with a lavish and sophisticated living experience.
+                button(data-popup="#brochure-popup").about__btn.btn  Learn more
+            .about__right  
+                .about__col 
+                    p.about__num 
+                        span(data-number="1").count 0
+                        span.mr ,
+                        span(data-number="2").count 0
+                        span.mr ,
+                        span(data-number="3").count 0
+                    p.about__p bedrooms apartments
+                .about__col 
+                    p(data-number="52").about__num.count 0
+                    p.about__p storey building
+                .about__col 
+                    p.about__num
+                        span(data-number="801").count.mr 0
+                        span.small sq. ft.
+                    p.about__p minimum total area
+                .about__col 
+                    p.about__num
+                        span(data-number="4").count.mr 0
+                        span.small years 
+                    p.about__p payment plan

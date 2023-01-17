@@ -1,0 +1,178 @@
+.interior{
+    display: block;
+    background: #2B3845;
+    width: 100%;
+    overflow-x: clip;
+    height: 500vh;
+    @include media(1200){
+        display: none;
+    }
+    img{
+        max-height: 80vh !important;
+    }
+    &__body{
+        width: 100%;
+        overflow-x: visible;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: flex-start;
+        width: max-content;
+        height: calc(100vh - 140px);
+    }
+    &__content{
+        padding-right: 70px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        font-weight: 300;
+        font-size: 400px;
+        line-height: 100%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        opacity: 0.1;
+        margin-left: -735px;
+        margin-bottom: 32px;
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: #FFFFFF;
+        max-width: 558px;
+    }
+    &__gallery{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 1;
+        gap: 100px;
+    }
+    &__left{
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        position: relative;
+        left: -660px;
+        height: 100%;
+        gap: 100px;
+        &.not{
+            margin-left: 0;
+        }
+        &-img{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+
+            img{
+                max-height: 100%;
+            }
+            &_2{
+                // position: absolute;
+                // bottom: 30px;
+                // right: -226px;
+                // height: 350px;
+                // width: 300px;
+                &.not{
+                    position: relative;
+                    bottom: 0;
+                    right: 0;
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+        &-col{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // flex-direction: column;
+            // margin-left: 60px;
+            // justify-content: flex-end;
+        }
+        &-p{
+            margin-left: 60px;
+            margin-top: 30px;
+            margin-right: 60px;
+            width: 552px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+    }
+}
+.interior-mobile{
+    overflow: hidden;
+    display: none;
+    width: 100%;
+    background-color: #2B3845;
+    caret-color: transparent;
+    @include media(1200){
+        display: block;
+    }
+    &__body{
+        padding: 60px 15px;
+    }
+    &__title{
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__paragraph{
+        font-size: 18px;
+        color: white;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto 0px auto;
+    }
+    .swiper{
+        width: 100%;
+        max-width: 700px;
+        aspect-ratio: 3/2;
+        overflow: visible;
+        padding-bottom: 60px;
+        @include media(768){
+            aspect-ratio: 4/3;
+        }
+        @include media(576){
+            aspect-ratio: 6/5;
+        }
+        &-slide{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .swiper-pagination{
+            &-bullet{
+                background-color: #DCC39E;
+                width: 13px;
+                height: 13px;
+                transition: 300ms ease;
+                &-active{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+.location{
+    height: 100vh;
+    position: relative;
+    @include media(576){
+        max-height: 100vh;
+        height: max-content;
+        overflow: hidden;
+    }
+    &__acc{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 333px;
+        background: #37485A;
+        z-index: 3;
+        padding: 46px 40px;
+        @include media(992){
+            top: auto;
+            bottom: 0;
+        }
+        @include media(768){
+            width: 100%;
+            padding: 17px 26px;
+        }
+        // @include media(400){
+        //     width: 100%;
+        // }
+        .accordion{
+            &__button{
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 144%;
+                color: #FFFFFF;
+                display: flex;
+                user-select: none;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                @include media(768){
+                    justify-content: center;
+                    gap: 25px;
+                }
+                svg{
+                    transition: 300ms ease;
+                    @include media(992){
+                        transform: rotate(-180deg);
+                    }
+                }
+                &.active{
+                    svg{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            &__content{
+                display: none;
+                padding-top: 90px;
+                padding-bottom: 40px;
+                flex-direction: column;
+            }
+            &__item{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 40px;
+                &:not(:last-of-type){
+                    margin-bottom: 45px;
+                }
+                &.nosvg{
+                    position: relative;
+                    .accordion__item-svg{
+                        position: relative;
+                        .circ{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 70%;
+                            transition: 300ms ease;
+                            opacity: 0;
+                            background: #fff;
+                            border-radius: 50%;
+                            visibility: hidden;
+                            height: 70%;
+                        }
+                    }
+                }
+                &.active{
+                    .accordion__item-svg{
+                        background: #fff;
+                        svg{
+                            fill: #2F3B46;
+                            stroke: #2F3B46;
+                            stroke-opacity: 1;
+                            opacity: 1;
+                            fill-opacity: 1;
+                        }
+                    }
+                    &.nosvg{
+                        .accordion__item-svg{
+                            background: transparent;
+                            .circ{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+                &-svg{
+                    width: 41.4px;
+                    height: 41.4px;
+                    border-radius: 50%;
+                    border: 1px solid #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 300ms ease;
+                    svg{
+                        transition: 300ms ease;
+                        stroke: white;
+                    }
+                }
+                span{
+                    font-weight: 400;
+                    font-size: 23.29px;
+                    line-height: 144%;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+        display: none;
+        &.active{
+            display: block;
+        }
+        &>img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include media(992){
+                object-position: -150px;
+            }
+            @include media(575){
+                display: none;
+            }
+            // @include media(576){
+            //     object-position: -200px;
+            // }
+        }
+        .sm{
+            display: none;
+            @include media(575){
+                display: block;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+mixin popup()
+    .popup#register 
+        .popup__overlay.popup-close 
+        .popup__body
+            button(type="button").popup-close.popup__close.hover.popup__close-md
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2871 1.16699L1.28711 21.167M21.2871 21.167L1.28711 1.16699" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            .popup__bg.multiple
+                .popup__bg-img.first.active
+                    img(src="@img/popup-1.png" alt="" draggable="false")
+                .popup__bg-img 
+                    img(src="@img/popup-2.png" alt="" draggable="false")
+                .popup__bg-img.last 
+                    img(src="@img/popup-3.png" alt="" draggable="false")
+            .popup__bg-md 
+                img(src="@img/amenities-1.png", alt="")
+            .popup__content
+                p.popup__title.popup__title-md <span>Descriptive brochure</span> about the project
+                p.popup__p that includes :
+                .popup__tag 
+                    .popup__tag-wrap
+                        .popup__tag-item
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 1.70498L5.5 13.705L0 8.20498L1.41 6.79498L5.5 10.875L16.09 0.294983L17.5 1.70498Z" fill="#DCC39E"/>
+                            </svg>
+                            span Masterplan
+                        .popup__tag-item
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 1.70498L5.5 13.705L0 8.20498L1.41 6.79498L5.5 10.875L16.09 0.294983L17.5 1.70498Z" fill="#DCC39E"/>
+                            </svg>
+                            span Gallery
+                        .popup__tag-item
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 1.70498L5.5 13.705L0 8.20498L1.41 6.79498L5.5 10.875L16.09 0.294983L17.5 1.70498Z" fill="#DCC39E"/>
+                            </svg>
+                            span Lifestyle
+                        .popup__tag-item
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 1.70498L5.5 13.705L0 8.20498L1.41 6.79498L5.5 10.875L16.09 0.294983L17.5 1.70498Z" fill="#DCC39E"/>
+                            </svg>
+                            span Floor plans
+            form(action="#" method="post").popup__form
+                .popup__input
+                    label(for="your-name")
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.307073C6.72256 0.305397 5.48755 0.75855 4.5225 1.58304C3.55744 2.40753 2.92738 3.54781 2.74839 4.79378C2.56941 6.03975 2.85355 7.30747 3.54848 8.36336C4.24341 9.41925 5.30229 10.1922 6.53005 10.5397C4.78539 10.7484 3.28913 11.3559 2.1611 12.4512C0.72621 13.8431 0 15.9173 0 18.6234C0 18.8047 0.0731242 18.9786 0.203286 19.1068C0.333449 19.235 0.509987 19.3071 0.694064 19.3071C0.878141 19.3071 1.05468 19.235 1.18484 19.1068C1.315 18.9786 1.38813 18.8047 1.38813 18.6234C1.38813 16.1476 2.05005 14.4779 3.13571 13.4243C4.22283 12.3692 5.84767 11.8222 8 11.8222C10.1523 11.8222 11.7772 12.3692 12.8658 13.4243C13.95 14.4793 14.6119 16.1476 14.6119 18.6234C14.6119 18.8047 14.685 18.9786 14.8152 19.1068C14.9453 19.235 15.1219 19.3071 15.3059 19.3071C15.49 19.3071 15.6665 19.235 15.7967 19.1068C15.9269 18.9786 16 18.8047 16 18.6234C16 15.9173 15.2738 13.8446 13.8374 12.4512C12.7123 11.3573 11.2146 10.7484 9.46995 10.5397C10.6936 10.1883 11.7477 9.41416 12.439 8.35929C13.1303 7.30441 13.4125 6.03945 13.2339 4.79624C13.0553 3.55304 12.4279 2.41488 11.4666 1.59038C10.5053 0.765877 9.2746 0.310273 8 0.307073ZM4.09132 5.52487C4.09132 4.50369 4.50313 3.52433 5.23615 2.80225C5.96917 2.08016 6.96335 1.6745 8 1.6745C9.03664 1.6745 10.0308 2.08016 10.7639 2.80225C11.4969 3.52433 11.9087 4.50369 11.9087 5.52487C11.9087 6.54606 11.4969 7.52542 10.7639 8.2475C10.0308 8.96959 9.03664 9.37525 8 9.37525C6.96335 9.37525 5.96917 8.96959 5.23615 8.2475C4.50313 7.52542 4.09132 6.54606 4.09132 5.52487Z" fill="white"/>
+                        </svg>
+                        span Your name
+                    input(type="text" name='name' id="your-name" placeholder="Your name" required)
+                    .popup__input-hr 
+                .popup__input
+                    label(for="your-email")
+                        <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8801 1.14465H2.53395C1.52497 1.14465 0.707031 1.98412 0.707031 3.01965V14.2697C0.707031 15.3052 1.52497 16.1447 2.53395 16.1447H17.8801C18.8891 16.1447 19.707 15.3052 19.707 14.2697V3.01965C19.707 1.98412 18.8891 1.14465 17.8801 1.14465Z" stroke="white" stroke-width="1.08412" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.62891 4.14551L10.2058 9.39551L16.7828 4.14551" stroke="white" stroke-width="1.08412" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        span Your e-mail
+                    input(type='email' name='email' id="your-email" placeholder="Your email" required)
+                    .popup__input-hr 
+                .popup__input
+                    label(for="your-number") 
+                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.91193 1.00662L4.37619 0.631605C5.04275 0.460616 5.7597 0.501723 6.39322 0.747254C7.02675 0.992785 7.53353 1.42596 7.81898 1.96591L8.73018 3.68948C8.97571 4.1538 9.04411 4.67183 8.92577 5.17088C8.80744 5.66993 8.50832 6.12495 8.07038 6.4721L6.47821 7.7344C6.45853 7.75003 6.44239 7.76858 6.43058 7.78915C6.26386 8.07867 6.51702 8.85195 7.31002 10.0205C8.20445 11.3376 8.89513 11.8581 9.21533 11.7778L11.305 11.234C11.8773 11.0855 12.4899 11.0928 13.057 11.2552C13.6241 11.4175 14.1172 11.7267 14.4673 12.1393L15.7622 13.6641C16.1687 14.1429 16.357 14.7309 16.2921 15.3188C16.2272 15.9068 15.9136 16.4547 15.4093 16.8608L14.2953 17.7571C13.9079 18.0691 13.4374 18.2968 12.9241 18.4207C12.4108 18.5447 11.8698 18.5612 11.3473 18.4688C8.24503 17.9198 5.46557 15.7957 2.98514 12.1431C0.503831 8.48818 -0.26976 5.37555 0.726999 2.8157C0.893851 2.38713 1.17957 1.99901 1.56002 1.68414C1.94047 1.36926 2.40447 1.13688 2.91281 1.00662H2.91193ZM3.29476 2.08367C2.98974 2.16178 2.71132 2.30118 2.48302 2.49008C2.25471 2.67898 2.08324 2.91183 1.98309 3.16896C1.12394 5.3748 1.81991 8.17692 4.13097 11.5806C6.44028 14.982 8.94364 16.8945 11.6164 17.3671C11.93 17.4225 12.2547 17.4126 12.5629 17.3381C12.871 17.2637 13.1534 17.1269 13.3858 16.9395L14.499 16.044C14.7706 15.8254 14.9397 15.5304 14.9747 15.2138C15.0097 14.8972 14.9084 14.5805 14.6896 14.3227L13.3947 12.7971C13.2062 12.575 12.9407 12.4085 12.6354 12.3211C12.3301 12.2337 12.0003 12.2297 11.6922 12.3096L9.59727 12.8549C8.43821 13.1481 7.34795 12.3268 6.16419 10.5823C5.16125 9.10621 4.81371 8.03966 5.2424 7.29488C5.32532 7.15088 5.43823 7.02112 5.57583 6.91162L7.168 5.64931C7.40391 5.46239 7.56505 5.21735 7.6288 4.94858C7.69256 4.67981 7.65573 4.40081 7.52348 4.15075L6.61229 2.42793C6.45859 2.13711 6.18565 1.90381 5.84445 1.77158C5.50324 1.63936 5.1171 1.61725 4.75814 1.7094L3.29387 2.08442L3.29476 2.08367Z" fill="white"/>
+                        </svg>
+                        span Your number
+                    input(type='tel' name='phone' id="your-number" placeholder="Your number" required)
+                    .popup__input-hr 
+                input(type="hidden" name="project" value="damac")
+                input(type="hidden" name="description" value="page_form")
+                input(type="hidden" name="duration" value="").duration
+                input(type="hidden" name="pasted_fields" value="").pasted_fields
+                input(type="hidden" name="language" value="english")
+                input(type="hidden" name="current_page" value="")
+                button(type="submit").popup__button.hover Download 
+
+    .floor-plan.popup#floorPopup 
+        .blur.popup-close 
+        .floor-plan__modal 
+            .floor-plan__modal-back.popup-close.hover 
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.46656 7.61674L14.5522 1.53113C14.6724 1.39069 14.7353 1.21005 14.7281 1.0253C14.721 0.840545 14.6444 0.665289 14.5137 0.534552C14.3829 0.403814 14.2077 0.327224 14.0229 0.320088C13.8382 0.312952 13.6575 0.375795 13.5171 0.496058L7.43149 6.58167L1.34588 0.488717C1.20765 0.350485 1.02017 0.272827 0.824676 0.272827C0.629187 0.272827 0.441704 0.350485 0.303472 0.488717C0.16524 0.626949 0.0875816 0.814432 0.0875816 1.00992C0.0875816 1.20541 0.16524 1.39289 0.303472 1.53113L6.39643 7.61674L0.303472 13.7024C0.226626 13.7682 0.164213 13.8491 0.120151 13.9402C0.076088 14.0313 0.051327 14.1305 0.047422 14.2316C0.043517 14.3327 0.060552 14.4335 0.0974581 14.5277C0.134364 14.6219 0.190345 14.7075 0.261885 14.779C0.333426 14.8505 0.418982 14.9065 0.513185 14.9434C0.607387 14.9803 0.708201 14.9974 0.8093 14.9935C0.910398 14.9896 1.0096 14.9648 1.10067 14.9207C1.19175 14.8767 1.27273 14.8143 1.33854 14.7374L7.43149 8.65181L13.5171 14.7374C13.6575 14.8577 13.8382 14.9205 14.0229 14.9134C14.2077 14.9063 14.3829 14.8297 14.5137 14.6989C14.6444 14.5682 14.721 14.3929 14.7281 14.2082C14.7353 14.0234 14.6724 13.8428 14.5522 13.7024L8.46656 7.61674Z" fill="#5E7390"/>
+                </svg>
+            .floor-plan__modal-left 
+                img(src="@img/white-logo.svg" alt="" data-fancybox).floor-plan__modal-left-img.floor-plan__img 
+                p.floor-plan__from 
+            .floor-plan__modal-right 
+                img(src="@img/white-logo.svg" alt="").floor-plan__modal-logo
+                p.floor-plan__modal-right-title <span>book</span> a unit
+                .floor-mobile 
+                    p.floor-plan__from
+                    img(src="@img/white-logo.svg" alt="" data-fancybox).floor-plan__modal-left-img.floor-plan__img
+                form(action="https://form.sales-inquiries.ae/logger/form_receiver/" data-gtag-submit="modal" method="post") 
+                    label(for='menu-name') Full name 
+                    input#menu-name.menu__input-text(type='text' placeholder='Your name' name='name' required)
+                    label(for='menu-mail') E-mail address 
+                    input#menu-mail.menu__input-text(type='email' name='email' placeholder='Your e-mail' required)
+                    label(for='menu-phone_number') Phone number
+                    input#menu-phone_number.menu__input-text(type='tel' name='phone' placeholder='Phone number' required)
+                    input(type="hidden" name="project" value="harbour_lights")
+                    input(type="hidden" name="description" value="page_form")
+                    input(type="hidden" name="duration" value="").duration
+                    input(type="hidden" name="pasted_fields" value="").pasted_fields
+                    input(type="hidden" name="language" value="english")
+                    input(type="hidden" name="current_page" value="")
+                    .menu__lower-btn-con
+                        button.menu__submit.hover(type='submit') Book
+                        a.menu__about-project-btn(href='https://t.me/Sales_office_en_bot' target="_blank" data-gtag-click="telegram").hover
+                            <svg width="19" height="17" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.68448 8.06174C1.68448 8.06174 10.2292 4.46283 13.1927 3.19557C14.3288 2.6887 18.1813 1.0666 18.1813 1.0666C18.1813 1.0666 19.9594 0.356987 19.8112 2.0804C19.7618 2.79008 19.3667 5.27382 18.9716 7.96037C18.3788 11.7621 17.7368 15.9186 17.7368 15.9186C17.7368 15.9186 17.638 17.0845 16.7983 17.2872C15.9587 17.49 14.5757 16.5776 14.3288 16.3748C14.1311 16.2228 10.6244 13.9417 9.34018 12.8265C8.99443 12.5224 8.59932 11.9142 9.38954 11.2045C11.1677 9.53176 13.2915 7.45351 14.5757 6.13559C15.1684 5.52728 15.7611 4.10799 13.2915 5.8314C9.78472 8.31521 6.3273 10.6469 6.3273 10.6469C6.3273 10.6469 5.53701 11.1538 4.05528 10.6976C2.57348 10.2414 0.844764 9.63313 0.844764 9.63313C0.844764 9.63313 -0.340567 8.8728 1.68448 8.06174Z" fill="white"/>
+                            </svg>
+                        a.menu__about-project-btn.event_wp(href='#' target="_blank" data-gtag-click="whatsapp").hover
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 21.5265L2.0067 15.9242C0.791585 13.7418 0.40553 11.1952 0.919379 8.75158C1.43323 6.30798 2.81251 4.13133 4.80413 2.62105C6.79575 1.11077 9.26612 0.368165 11.7619 0.529509C14.2577 0.690852 16.6115 1.74532 18.3914 3.49941C20.1713 5.25351 21.2579 7.58957 21.4518 10.0789C21.6456 12.5683 20.9338 15.044 19.447 17.0516C17.9601 19.0593 15.7978 20.4644 13.357 21.009C10.9162 21.5535 8.36056 21.2011 6.15903 20.0163L0.5 21.5265ZM6.4319 17.9199L6.78188 18.1272C8.3765 19.0708 10.239 19.4613 12.0791 19.2378C13.9192 19.0143 15.6336 18.1894 16.9551 16.8916C18.2766 15.5938 19.1309 13.8961 19.385 12.0629C19.6391 10.2298 19.2786 8.36422 18.3598 6.75695C17.441 5.14968 16.0154 3.891 14.3052 3.17704C12.595 2.46309 10.6963 2.33398 8.90493 2.80983C7.11357 3.28567 5.5302 4.33974 4.40155 5.80778C3.27291 7.27583 2.66239 9.07537 2.66514 10.926C2.66364 12.4604 3.08872 13.9652 3.89304 15.2728L4.11253 15.634L3.2702 18.7609L6.4319 17.9199Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9245 12.3676C14.7193 12.2024 14.4791 12.0862 14.2221 12.0277C13.9651 11.9692 13.6981 11.97 13.4415 12.0301C13.0559 12.19 12.8068 12.794 12.5576 13.0961C12.5051 13.1685 12.4279 13.2192 12.3405 13.2389C12.2532 13.2585 12.1616 13.2456 12.0831 13.2027C10.6715 12.6507 9.48827 11.6385 8.72562 10.3304C8.66057 10.2488 8.62979 10.1452 8.63974 10.0414C8.6497 9.93752 8.69963 9.84159 8.77901 9.77377C9.05688 9.49915 9.2609 9.159 9.3722 8.78479C9.39691 8.37203 9.30219 7.96088 9.09933 7.60038C8.9425 7.09496 8.64404 6.64492 8.23921 6.30344C8.0304 6.20969 7.79889 6.17825 7.57259 6.21293C7.34629 6.24761 7.13487 6.34691 6.96385 6.49887C6.66694 6.75461 6.43127 7.07358 6.2742 7.4323C6.11713 7.79102 6.04266 8.18034 6.05627 8.57159C6.05718 8.79131 6.08507 9.01008 6.13931 9.22302C6.27706 9.73463 6.48888 10.2234 6.76809 10.6739C6.96954 11.019 7.18933 11.3531 7.42654 11.6748C8.19741 12.7312 9.16642 13.6283 10.2798 14.316C10.8385 14.6655 11.4356 14.9496 12.0593 15.1629C12.7073 15.4561 13.4227 15.5686 14.1296 15.4886C14.5323 15.4277 14.9139 15.269 15.2408 15.0263C15.5677 14.7836 15.8298 14.4644 16.0041 14.0969C16.1065 13.8748 16.1375 13.6266 16.093 13.3862C15.9863 12.8947 15.3278 12.6045 14.9245 12.3676Z" fill="white"/>
+                            </svg>
+                        a.menu__about-project-btn.event_call(href='#' data-gtag-click="phone_call").hover
+                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.7109 11.9925L11.8637 10.3519C11.6652 10.2629 11.4472 10.226 11.2305 10.2447C11.0138 10.2633 10.8054 10.3369 10.625 10.4585L8.56602 11.8285C7.31114 11.219 6.29513 10.2087 5.67852 8.95736L7.04023 6.87377C7.16102 6.6932 7.23479 6.48532 7.25484 6.26901C7.2749 6.05269 7.24061 5.8348 7.15508 5.6351L5.50625 1.78783C5.39119 1.52805 5.19638 1.31167 4.95006 1.17007C4.70374 1.02848 4.41872 0.969022 4.13633 1.00033C3.02857 1.14545 2.0112 1.6879 1.27337 2.52682C0.535545 3.36574 0.127463 4.44405 0.125 5.56127C0.125 12.0746 5.42422 17.3738 11.9375 17.3738C13.0547 17.3713 14.133 16.9632 14.972 16.2254C15.8109 15.4876 16.3533 14.4702 16.4984 13.3624C16.5297 13.0801 16.4703 12.795 16.3287 12.5487C16.1871 12.3024 15.9707 12.1076 15.7109 11.9925Z" fill="white"/>
+                            </svg>
+
+    .popup.handover-popup#handover-popup
+        .popup__body
+            button(type="button").popup-close.popup__close.hover 
+                <svg width="13" height="13" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2871 1.16699L1.28711 21.167M21.2871 21.167L1.28711 1.16699" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            .popup__body-rows
+                .popup__body-col 
+                    .popup__body-item 4% Within 3 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 6 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 9 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 12 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 15 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 18 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 21 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 24 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 27 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 30 Month(s) Of Sale Date
+                .popup__body-col 
+                    .popup__body-item 4% Within 33 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 36 Month(s) Of Sale Date
+                    .popup__body-item 4% Within 39 Month(s) Of Sale Date
+                    .popup__body-item 3% Within 42 Month(s) Of Sale Date
+                    .popup__body-item 3% Within 45 Month(s) Of Sale Date
+                    .popup__body-item 3% Within 48 Month(s) Of Sale Date
+                    .popup__body-item 3% On 70% Completion Milestone
+                    .popup__body-item 20% On Completion
+        .popup__close-2.popup-close Back
+
+    .popup.brochure-popup#brochure-popup
+        .popup__body 
+            button(type="button").popup-close.popup__close.hover.popup__close-md
+                <svg width="13" height="13" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.2871 1.16699L1.28711 21.167M21.2871 21.167L1.28711 1.16699" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            .popup__brochure-bg
+                img(src="@img/bg-brochure-popup.png" alt="" draggable="false")
+            .popup__inner-wrap
+                .popup__body-head
+                    .popup__title <span>descriptive</span> brochure <span class="sm-none">in one click</span>
+                    .popup__tag-ul
+                        .popup__tag-li Masterplan
+                        .popup__tag-li Gallery
+                        .popup__tag-li Lifestyle
+                        .popup__tag-li Floor plans
+                .popup__image
+                    img(src="@img/popup-brochure.png" alt="")
+
+                form(action="#" method="post").popup__form.popup__form-2
+                    .popup__input
+                        input(type="text" name='name' placeholder="Your name" required)
+                        .popup__input-hr 
+                    .popup__input
+                        input(type='email' name='email' placeholder="Your e-mail" required)
+                        .popup__input-hr 
+                    .popup__input
+                        input(type='tel' name='phone' placeholder="Phone number" required)
+                        .popup__input-hr 
+                    input(type="hidden" name="project" value="damac")
+                    input(type="hidden" name="description" value="page_form")
+                    input(type="hidden" name="duration" value="").duration
+                    input(type="hidden" name="pasted_fields" value="").pasted_fields
+                    input(type="hidden" name="language" value="english")
+                    input(type="hidden" name="current_page" value="")
+                    button(type="submit").popup__button.hover Download 
