@@ -272,6 +272,7 @@ body.loaded #preloader {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
   z-index: 1000;
+  line-height: 0;
 }
 
 #preloader__num {
@@ -4470,6 +4471,27 @@ body.loaded #preloader {
 @media (max-width: 575px) {
   .showmore.sm {
     display: block;
+  }
+
+  #preloader__logo {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  #preloader__logo img {
+    width: 100%;
+  }
+
+  #preloader__loaded-logo {
+    height: 100%;
+  }
+
+  #preloader__loaded-logo img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
   }
 
   .intro__background img {
