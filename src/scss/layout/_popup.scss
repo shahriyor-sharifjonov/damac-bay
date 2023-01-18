@@ -496,7 +496,7 @@
         border-radius: 5px;
         padding-top: 72px;
         padding-bottom: 72px;
-        @include media(575){
+        @include media(576){
             height: calc(100% - 100px);
         }
 
@@ -628,7 +628,7 @@
             gap: 24px;
             max-width: 700px;
             width: 100%;
-            @include media(575){
+            @include media(576){
                 gap: 0;
             }
         }
@@ -672,7 +672,7 @@
         width: 100%;
         min-width: 0;
         text-align: left;
-        @include media(575){
+        @include media(576){
             width: calc(100% + 30px); 
             max-width: calc(100% + 30px);
             margin-left: -15px;
@@ -683,7 +683,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px 28px;
-        @include media(575){
+        @include media(576){
             gap: 7px;
             width: calc(100% + 30px);
             margin-left: -15px;

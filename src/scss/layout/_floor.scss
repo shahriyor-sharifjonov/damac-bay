@@ -196,7 +196,7 @@
             text-transform: uppercase;
             color: #2B3845; 
             margin-bottom: 40px;   
-            @include media(575){
+            @include media(576){
                 margin-bottom: 20px;
             }     
         }
@@ -208,12 +208,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            @include media(575){
+            @include media(576){
                 min-height: auto;
             }
             img{
                 max-width: 100%;
-                @include media(575){
+                @include media(576){
                     max-height: 155px;
                 }
             }

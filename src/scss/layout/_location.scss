@@ -143,7 +143,7 @@
             @include media(992){
                 object-position: -150px;
             }
-            @include media(575){
+            @include media(576){
                 display: none;
             }
             // @include media(576){
@@ -152,7 +152,7 @@
         }
         .sm{
             display: none;
-            @include media(575){
+            @include media(576){
                 display: block;
                 position: relative;
                 img{

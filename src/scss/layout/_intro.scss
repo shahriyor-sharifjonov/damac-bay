@@ -1,6 +1,6 @@
 .intro{
     position: relative;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 60px);
     isolation: isolate;
     display: flex;
     overflow: hidden;
@@ -21,8 +21,14 @@
             width: 100%;
             background: linear-gradient(180deg, rgba(43, 56, 69, 0) -5.79%, #2B3845 95.64%);
         }
-        @include media(575){
-            // height: 800px;
+        @include media(576){
+            height: 309px;
+            min-height: 309px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(43, 56, 69, 0) 13.61%, #2B3845 57.28%);
+            bottom: -120px;
+            left: 0;
+            top: auto;
         }
     }
     &__body{
@@ -31,6 +37,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        @include media(575){
+            justify-content: flex-start;
+            padding-top: 85px;
+        }
     }
     &__background{
         position: absolute;
@@ -41,6 +51,28 @@
         isolation: isolate;
         z-index: -2;
         will-change: transform;
+        @include media(576){
+            display: none;
+        }
+        &_sm{
+            display: none;
+            @include media(576){
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                isolation: isolate;
+                z-index: -2;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
         img{
             position: absolute;
             right: 0;
@@ -52,7 +84,7 @@
             @include media(768){
                 object-position: 100px;
             }
-            @include media(575){
+            @include media(576){
                 object-position: -125px;
             }
         }
@@ -77,6 +109,7 @@
         }
         @media (max-width: 576px) {
             font-size: 32px;
+            margin-bottom: 10px;
         }
     }
     &__p{
@@ -100,6 +133,7 @@
         }
         @media (max-width: 576px) {
             letter-spacing: -1px;
+            margin-bottom: 25px;
         }
     }
     &__scroll{
