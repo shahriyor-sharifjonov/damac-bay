@@ -141,6 +141,9 @@ export function init() {
                           )
                         })
             }
-        }
+            if(document.querySelector('.brochure__sm-scroll')){
+                let tween = gsap.to(".brochure__sm-scroll", {xPercent: -100, repeat: -1, duration: 30, ease: "linear"}).totalProgress(0);
+            };
+        },
     })
 }

@@ -1844,8 +1844,6 @@ body.loaded #preloader {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-animation: auto-scroll 30s linear infinite;
-          animation: auto-scroll 30s linear infinite;
   height: 85vh;
   line-height: 0;
   overflow-y: hidden;
