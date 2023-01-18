@@ -1024,8 +1024,8 @@ body.loaded #preloader {
 
 .offer__subtitle {
   font-weight: 600;
-  font-size: 30px;
-  line-height: 110%;
+  font-size: 60px;
+  line-height: 115%;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -2868,7 +2868,7 @@ body.loaded #preloader {
   line-height: 34px;
   text-transform: capitalize;
   color: #FFFFFF;
-  max-width: 410px;
+  max-width: 342px;
   width: 100%;
   min-width: 0;
   text-align: left;
@@ -3343,10 +3343,6 @@ body.loaded #preloader {
     max-width: 992px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-
-  .intro__background img {
-    width: auto;
   }
 
   .intro__title {
@@ -4469,8 +4465,8 @@ body.loaded #preloader {
   }
 
   .intro__background img {
-    -o-object-position: 440px;
-       object-position: 440px;
+    -o-object-position: -125px;
+       object-position: -125px;
   }
 
   .about__bg img {

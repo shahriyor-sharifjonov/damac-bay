@@ -4,9 +4,6 @@
     isolation: isolate;
     display: flex;
     overflow: hidden;
-    @include media(575){
-        // min-height: 400px;
-    }
     &::before{
         content: '';
         position: absolute;
@@ -52,14 +49,11 @@
             height: 100%;
             object-fit: cover; 
             object-position: 200px -40px;
-            @include media(1200){
-                width: auto;
-            }
             @include media(768){
                 object-position: 100px;
             }
             @include media(575){
-                object-position: 440px;
+                object-position: -125px;
             }
         }
     }
