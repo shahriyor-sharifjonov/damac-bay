@@ -4156,6 +4156,10 @@ body.loaded #preloader {
     display: block;
   }
 
+  .brochure-popup .popup__title {
+    text-align: center;
+  }
+
   .brochure-popup .popup__body {
     padding: 50px;
   }

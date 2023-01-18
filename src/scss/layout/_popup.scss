@@ -672,6 +672,9 @@
         width: 100%;
         min-width: 0;
         text-align: left;
+        @include media(768){
+            text-align: center;
+        }
         @include media(576){
             width: calc(100% + 30px); 
             max-width: calc(100% + 30px);
