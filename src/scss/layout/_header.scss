@@ -77,13 +77,12 @@
       font-size: 18px;
     }
     @media (max-width: 768px) {
-      display: none;
+      display: none !important;
     }
     &-mob {
-      display: none;
+      display: none !important;
       @media (max-width: 768px) {
-        display: block;
-        flex-basis: 50%;
+        display: block !important;
         max-width: 50%;
         display: flex;
         justify-content: flex-end;

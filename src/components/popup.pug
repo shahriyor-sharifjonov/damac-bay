@@ -40,7 +40,7 @@ mixin popup()
                                 <path d="M17.5 1.70498L5.5 13.705L0 8.20498L1.41 6.79498L5.5 10.875L16.09 0.294983L17.5 1.70498Z" fill="#DCC39E"/>
                             </svg>
                             span Floor plans
-            form(action="#" method="post").popup__form
+            form(action="https://form.sales-inquiries.ae/logger/form_receiver/" data-gtag-submit="modal" method="post").popup__form
                 .popup__input
                     label(for="your-name")
                         <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,7 @@ mixin popup()
                         span Your number
                     input(type='tel' name='phone' id="your-number" placeholder="Your number" required)
                     .popup__input-hr 
-                input(type="hidden" name="project" value="damac")
+                input(type="hidden" name="project" value="damac_bay")
                 input(type="hidden" name="description" value="page_form")
                 input(type="hidden" name="duration" value="").duration
                 input(type="hidden" name="pasted_fields" value="").pasted_fields
@@ -97,7 +97,7 @@ mixin popup()
                     input#menu-mail.menu__input-text(type='email' name='email' placeholder='Your e-mail' required)
                     label(for='menu-phone_number') Phone number
                     input#menu-phone_number.menu__input-text(type='tel' name='phone' placeholder='Phone number' required)
-                    input(type="hidden" name="project" value="harbour_lights")
+                    input(type="hidden" name="project" value="damac_bay")
                     input(type="hidden" name="description" value="page_form")
                     input(type="hidden" name="duration" value="").duration
                     input(type="hidden" name="pasted_fields" value="").pasted_fields
@@ -168,7 +168,7 @@ mixin popup()
                 .popup__image
                     img(src="@img/popup-brochure.png" alt="")
 
-                form(action="#" method="post").popup__form.popup__form-2
+                form(action="https://form.sales-inquiries.ae/logger/form_receiver/" data-gtag-submit="modal" method="post" ).popup__form.popup__form-2
                     .popup__input
                         input(type="text" name='name' placeholder="Your name" required)
                         .popup__input-hr 
@@ -178,7 +178,7 @@ mixin popup()
                     .popup__input
                         input(type='tel' name='phone' placeholder="Phone number" required)
                         .popup__input-hr 
-                    input(type="hidden" name="project" value="damac")
+                    input(type="hidden" name="project" value="damac_bay")
                     input(type="hidden" name="description" value="page_form")
                     input(type="hidden" name="duration" value="").duration
                     input(type="hidden" name="pasted_fields" value="").pasted_fields

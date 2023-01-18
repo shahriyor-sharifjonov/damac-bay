@@ -23,7 +23,7 @@ mixin brochure()
                                 input(type='email' name='email' placeholder="Your e-mail" required).brochure__form-item-input  
                             .brochure__form-item 
                                 input(type='tel' name='phone' placeholder="Phone number" required).brochure__form-item-input  
-                            input(type="hidden" name="project" value="damac")
+                            input(type="hidden" name="project" value="damac_bay")
                             input(type="hidden" name="description" value="page_form")
                             input(type="hidden" name="duration" value="").duration
                             input(type="hidden" name="pasted_fields" value="").pasted_fields
@@ -48,12 +48,12 @@ mixin brochure()
 
         form(action="https://form.sales-inquiries.ae/logger/form_receiver/" data-gtag-submit="modal" method="post").brochure__form-content 
             .brochure__form-item 
-                input(type="text" name='name' placeholder="Your name").brochure__form-item-input  
+                input(type="text" name='name' placeholder="Your name" required).brochure__form-item-input  
             .brochure__form-item 
-                input(type='email' name='email' placeholder="Your e-mail").brochure__form-item-input  
+                input(type='email' name='email' placeholder="Your e-mail" required).brochure__form-item-input  
             .brochure__form-item 
-                input(type='tel' name='phone' placeholder="Phone number").brochure__form-item-input
-            input(type="hidden" name="project" value="damac")
+                input(type='tel' name='phone' placeholder="Phone number" required).brochure__form-item-input
+            input(type="hidden" name="project" value="damac_bay")
             input(type="hidden" name="description" value="page_form")
             input(type="hidden" name="duration" value="").duration
             input(type="hidden" name="pasted_fields" value="").pasted_fields

@@ -418,7 +418,7 @@ body.loaded #preloader {
 }
 
 .header__tel-mob {
-  display: none;
+  display: none !important;
 }
 
 .header__tel span {
@@ -1719,6 +1719,7 @@ body.loaded #preloader {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .brochure__form-item-label {
@@ -1738,7 +1739,7 @@ body.loaded #preloader {
   background: transparent;
   border: none;
   border-bottom: 1px solid #2D2D2D;
-  margin-bottom: 40px;
+  width: 100%;
 }
 
 .brochure__form-tag {
@@ -3424,8 +3425,11 @@ body.loaded #preloader {
     display: flex;
   }
 
-  .brochure__form-item-input {
+  .brochure__form-item {
     margin-bottom: 20px;
+  }
+
+  .brochure__form-item-input {
     padding: 8px 14px;
     border: 1px solid #2D2D2D;
   }
@@ -3760,13 +3764,11 @@ body.loaded #preloader {
 
 @media (max-width: 768px) {
   .header__tel {
-    display: none;
+    display: none !important;
   }
 
   .header__tel-mob {
-    display: block;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    display: block !important;
     max-width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3935,8 +3937,10 @@ body.loaded #preloader {
   }
 
   .brochure__sm .brochure__form-content {
+    isolation: isolate;
     width: 100%;
     max-width: 100%;
+    margin-top: -20px !important;
     padding: 0 60px 30px 60px;
     margin: 0;
   }
@@ -4674,6 +4678,6 @@ body.loaded #preloader {
 
 @media (max-width: 400px) {
   .brochure__sm .brochure__form-content {
-    padding: 30px 38px;
+    padding: 0 38px 30px 38px;
   }
 }
