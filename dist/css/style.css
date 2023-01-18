@@ -1731,12 +1731,12 @@ body.loaded #preloader {
 
 .brochure__form-item-input {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
-  border: none;
   color: #2D2D2D;
   padding-bottom: 2px;
   background: transparent;
+  border: none;
   border-bottom: 1px solid #2D2D2D;
   margin-bottom: 40px;
 }
@@ -1888,12 +1888,12 @@ body.loaded #preloader {
   font-weight: 700;
   color: #37485A;
   font-family: "Montserrat";
-  border-bottom-color: rgba(45, 45, 45, 0.4);
+  border-color: rgba(45, 45, 45, 0.4);
   border-radius: 0 !important;
 }
 
 .brochure__sm .brochure__form-item-input:focus-visible {
-  border-bottom-color: #2d2d2d;
+  border-color: #2d2d2d;
   outline: 0;
 }
 
@@ -3421,6 +3421,12 @@ body.loaded #preloader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .brochure__form-item-input {
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    border: 1px solid #2D2D2D;
   }
 
   .brochure__form-tag {
